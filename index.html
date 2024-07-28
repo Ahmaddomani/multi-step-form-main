@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="a Speical Design Using Html and Css and Pure Js"
+    />
+    <!-- displays site properly based on user's device -->
+    <!-- css files -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/normaliz.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Multi-step form</title>
+  </head>
+  <body>
+    <!-- start main page  -->
+    <div class="main-page">
+      <div class="content">
+        <!-- start stepsbox -->
+        <div class="stepsbox">
+          <ul class="steps">
+            <li>
+              <span class="count active">1</span>
+              <div class="text">
+                <span>STEP 1</span>
+                <p>Your info</p>
+              </div>
+            </li>
+            <li>
+              <span class="count">2</span>
+              <div class="text">
+                <span>STEP 2</span>
+                <p>Select plan</p>
+              </div>
+            </li>
+            <li>
+              <span class="count">3</span>
+              <div class="text">
+                <span>STEP 3</span>
+                <p>Add-ons</p>
+              </div>
+            </li>
+            <li>
+              <span class="count">4</span>
+              <div class="text">
+                <span>STEP 4</span>
+                <p>Summary</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- end stepsbox -->
+        <!-- start container info div -->
+        <div class="container">
+          <!-- start personal-info -->
+          <div class="personal-info">
+            <!--start header -->
+            <div class="header">
+              <h2>Personal info</h2>
+              <p>Please provide your name, email address, and phone number.</p>
+            </div>
+            <!-- end header -->
+            <!-- start inputs div -->
+            <div class="inputs">
+              <!-- start name input -->
+              <div class="name-input">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="e.g. Stephen King"
+                />
+              </div>
+              <!-- end name input -->
+              <!-- start name input -->
+              <div class="emai-input">
+                <span class="Error">Invalid Email</span>
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="e.g. stephenking@lorem.com"
+                />
+              </div>
+              <!-- end name input -->
+              <!-- start name input -->
+              <div class="name-input">
+                <span class="Error">Invalid Number</span>
+                <label for="phone">Phone Number</label>
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="e.g. +1 234 567 890"
+                />
+              </div>
+              <!-- end name input -->
+            </div>
+            <!-- end inputs div -->
+          </div>
+          <!-- end personal-info -->
+          <!-- start select plan -->
+          <div class="select-plan">
+            <!--start header -->
+            <div class="header">
+              <h2>Select your plan</h2>
+              <p>You have the option of monthly or yearly billing.</p>
+            </div>
+            <!--end header -->
+            <!-- start plans div -->
+            <div class="plans">
+              <!-- start Arcade -->
+              <div class="Arcade choised">
+                <img src="assets/images/icon-arcade.svg" alt="" />
+                <div class="text">
+                  <h4 class="name">Arcade</h4>
+                  <span class="price">$90/Yr</span>
+                  <span class="duration">2 months free</span>
+                </div>
+              </div>
+              <!-- end Arcade -->
+              <!-- start Advanced -->
+              <div class="Advanced">
+                <img src="assets/images/icon-Advanced.svg" alt="" />
+                <div class="text">
+                  <h4 class="name">Advanced</h4>
+                  <span class="price">$120/Yr</span>
+                  <span class="duration">2 months free</span>
+                </div>
+              </div>
+              <!-- end Advanced -->
+              <!-- start Pro -->
+              <div class="Pro">
+                <img src="assets/images/icon-Pro.svg" alt="" />
+                <div class="text">
+                  <h4 class="name">Pro</h4>
+                  <span class="price">$150/Yr</span>
+                  <span class="duration">2 months free</span>
+                </div>
+              </div>
+              <!-- end Arcade -->
+            </div>
+            <!-- end plans div -->
+            <!-- start choice plan  -->
+            <div class="choice">
+              <span class="monthly">Monthly</span>
+              <span class="button"><span></span></span>
+              <span class="Yearly colored">Yearly</span>
+            </div>
+            <!-- end choice plan  -->
+          </div>
+          <!-- end select plan -->
+          <!-- start pick div -->
+          <div class="pick">
+            <!--start header -->
+            <div class="header">
+              <h2>Pick add-ons</h2>
+              <p>Add-ons help enhance your gaming experience.</p>
+            </div>
+            <!--end header -->
+            <!-- start cheakboxes  -->
+            <div class="cheakboxes">
+              <!-- start box -->
+              <div class="box">
+                <span class="cheak"></span>
+                <div class="text">
+                  <h4>Online service</h4>
+                  <p>Access to multiplayer games</p>
+                </div>
+                <span class="pricePer">+$10/Yr</span>
+              </div>
+              <!-- end box -->
+              <!-- start box -->
+              <div class="box">
+                <span class="cheak"></span>
+                <div class="text">
+                  <h4>Larger storage</h4>
+                  <p>Extra 1TB of cloud save</p>
+                </div>
+                <span class="pricePer">+$20/Yr</span>
+              </div>
+              <!-- end box -->
+              <!-- start box -->
+              <div class="box">
+                <span class="cheak"></span>
+                <div class="text">
+                  <h4>Customizable Profile</h4>
+                  <p>Custom theme on your profile</p>
+                </div>
+                <span class="pricePer">+$20/Yr</span>
+              </div>
+              <!-- end box -->
+            </div>
+            <!-- end cheakboxes  -->
+          </div>
+          <!-- end pick div -->
+          <!-- start summary div -->
+          <div class="summary">
+            <!--start header -->
+            <div class="header">
+              <h2>Finishing up</h2>
+              <p>Double-check everything looks OK before confirming.</p>
+            </div>
+            <!--end header -->
+            <!-- start result div -->
+            <div class="result">
+              <!-- start choied-item -->
+              <div class="choised-item">
+                <div class="text">
+                  <div class="head">
+                    <h4></h4>
+                    <span></span>
+                  </div>
+                  <span class="change">change</span>
+                </div>
+                <span class="final-price"></span>
+              </div>
+              <!-- end choied-item -->
+            </div>
+            <!-- end result div -->
+          </div>
+          <!-- end summary div -->
+          <button class="next">Next Step</button>
+          <button class="confirm">Confirm</button>
+          <button class="go-back">Go Back</button>
+        </div>
+        <!-- end container div -->
+      </div>
+    </div>
+    <!-- end main page  -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/Ahmaddomani">AhmadAldomani</a>.
+    </div>
+    <!-- Scipt File -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
